@@ -52,3 +52,14 @@ function splitLetters(word) {
 
 changeWord();
 setInterval(changeWord, 4000);
+
+
+$('#meme').on('click', ()=> {
+  console.log(clicked);
+  if ($('#meme').attr('src') === './images/memeattic.png' )  {
+      $('#meme').attr('src', './images/simon.png');
+  } else if ($('#meme').attr('src') === './images/simon.png' ){
+      $('#meme').attr('src', './images/memeattic.png');
+  }
+  
+})

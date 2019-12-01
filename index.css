@@ -295,6 +295,18 @@ footer{
   margin: -84.60px 0;
 }
 
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden */
+}
+.fill img {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .hexagon:before,
 .hexagon:after {
   content: "";
@@ -313,4 +325,11 @@ footer{
   top: 100%;
   width: 0;
   border-top: 86.60px solid #64C7CC;
+}
+
+button {
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  margin: 0;
 }
