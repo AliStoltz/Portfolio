@@ -253,7 +253,7 @@ p {
 }
 
 footer{
-  position: fixed;
+  position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -270,4 +270,47 @@ footer{
 .footer {
   padding-bottom: 0px !important;
   margin-bottom: 0 auto;
+}
+
+.hex-container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: -15%;
+  /* margin-top: 10%; */
+  padding: 100px;
+}
+
+.hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  background-color: #64C7CC;
+}
+
+.hex1 {
+  margin: 84.60px 0;
+}
+
+.hex2 {
+  margin: -84.60px 0;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 86.60px solid #64C7CC;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 86.60px solid #64C7CC;
 }
