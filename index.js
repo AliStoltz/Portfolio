@@ -74,8 +74,8 @@ $('#simon').on('mouseenter mouseleave', ()=> {
 
 $('#wayfarer').on('mouseenter mouseleave', ()=> {
   if ($('#wayfarer').attr('src') === './images/wayfarer.png' )  {
-      $('#wayfarer').attr('src', './images/simon2.png');
-  } else if ($('#wayfarer').attr('src') === './images/simon2.png' ){
+      $('#wayfarer').attr('src', './images/wayfarer2.png');
+  } else if ($('#wayfarer').attr('src') === './images/wayfarer2.png' ){
       $('#wayfarer').attr('src', './images/wayfarer.png');
   }
   
@@ -83,9 +83,18 @@ $('#wayfarer').on('mouseenter mouseleave', ()=> {
 
 $('#collabathon').on('mouseenter mouseleave', ()=> {
   if ($('#collabathon').attr('src') === './images/collabathon.png' )  {
-      $('#collabathon').attr('src', './images/wayfarer.png');
-  } else if ($('#collabathon').attr('src') === './images/wayfarer.png' ){
+      $('#collabathon').attr('src', './images/collabathon2.png');
+  } else if ($('#collabathon').attr('src') === './images/collabathon2.png' ){
       $('#collabathon').attr('src', './images/collabathon.png');
+  }
+  
+})
+
+$('#okstupid').on('mouseenter mouseleave', ()=> {
+  if ($('#okstupid').attr('src') === './images/okstupid.jpg' )  {
+      $('#okstupid').attr('src', './images/okstupid2.png');
+  } else if ($('#okstupid').attr('src') === './images/okstupid2.png' ){
+      $('#okstupid').attr('src', './images/okstupid.jpg');
   }
   
 })

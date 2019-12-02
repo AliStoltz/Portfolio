@@ -70,6 +70,7 @@ nav {
   display: flex;
   justify-content: center;
   list-style: none;
+  z-index: 4;
 }
 
 .nav-item {
@@ -278,6 +279,7 @@ footer{
   margin-left: -15%;
   /* margin-top: 10%; */
   padding: 100px;
+  z-index: 1;
 }
 
 .hexagon {
@@ -309,6 +311,12 @@ footer{
   height: 100px;
   width: 100px;
   /* border-radius: 40%; */
+}
+
+.fill img:hover {
+  filter: none;
+  -webkit-filter: none;
+  transition: all .75s ease-in-out;
 }
 
 .fill video {
