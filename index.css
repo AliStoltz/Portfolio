@@ -283,7 +283,8 @@ footer{
 .hexagon {
   position: relative;
   width: 300px; 
-  height: 173.21px;
+  /* height: 173.21px; */
+  height: 230px;
   background-color: #64C7CC;
 }
 
@@ -305,6 +306,18 @@ footer{
   flex-shrink: 0;
   min-width: 100%;
   min-height: 100%;
+  height: 100px;
+  width: 100px;
+  /* border-radius: 40%; */
+}
+
+.fill video {
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100px;
+  width: 100px;
+  /* border-radius: 40%; */
 }
 
 .hexagon:before,
@@ -327,9 +340,10 @@ footer{
   border-top: 86.60px solid #64C7CC;
 }
 
-button {
-  width: 200px;
-  height: 200px;
+/* button {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
   padding: 0;
   margin: 0;
-}
+} */

@@ -54,12 +54,38 @@ changeWord();
 setInterval(changeWord, 4000);
 
 
-$('#meme').on('click', ()=> {
-  console.log(clicked);
+$('#meme').on('mouseenter mouseleave', ()=> {
   if ($('#meme').attr('src') === './images/memeattic.png' )  {
-      $('#meme').attr('src', './images/simon.png');
-  } else if ($('#meme').attr('src') === './images/simon.png' ){
+      $('#meme').attr('src', './images/meme2.png');
+  } else if ($('#meme').attr('src') === './images/meme2.png' ){
       $('#meme').attr('src', './images/memeattic.png');
+  }
+  
+})
+
+$('#simon').on('mouseenter mouseleave', ()=> {
+  if ($('#simon').attr('src') === './images/simon.png' )  {
+      $('#simon').attr('src', './images/simon2.png');
+  } else if ($('#simon').attr('src') === './images/simon2.png' ){
+      $('#simon').attr('src', './images/simon.png');
+  }
+  
+})
+
+$('#wayfarer').on('mouseenter mouseleave', ()=> {
+  if ($('#wayfarer').attr('src') === './images/wayfarer.png' )  {
+      $('#wayfarer').attr('src', './images/simon2.png');
+  } else if ($('#wayfarer').attr('src') === './images/simon2.png' ){
+      $('#wayfarer').attr('src', './images/wayfarer.png');
+  }
+  
+})
+
+$('#collabathon').on('mouseenter mouseleave', ()=> {
+  if ($('#collabathon').attr('src') === './images/collabathon.png' )  {
+      $('#collabathon').attr('src', './images/wayfarer.png');
+  } else if ($('#collabathon').attr('src') === './images/wayfarer.png' ){
+      $('#collabathon').attr('src', './images/collabathon.png');
   }
   
 })
